@@ -5,7 +5,7 @@ Thank you for your interest in the Next.js optimized package of Chargily Pay™,
 
 **IMPORTANT: This package is optimized for Next.js and uses Server Components and Server Actions. It must be used on the server-side only.**
 
-This package is developed by **Rauf ([ruzolut](https://github.com/ruzolut))** and is open to contributions from developers like you.
+This package is developed by **Rauf ([ruzolut](https://github.com/ruzolut))** and edited for NextJS by **Djallil ([DjallilElk](https://github.com/DjallilElk))**  is open to contributions from developers like you.
 
 
 ## Key Features
