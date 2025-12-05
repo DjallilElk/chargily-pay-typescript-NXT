@@ -1,0 +1,78 @@
+{
+  "name": "@chargily/chargily-pay",
+  "version": "2.1.0",
+  "description": "JavaScript Library for Chargily Pay™ Gateway - V2. The easiest and free way to integrate e-payment API through EDAHABIA of Algerie Poste and CIB of SATIM into your Next.js project.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chargily/chargily-pay-javascript.git"
+  },
+  "keywords": [
+    "chargily",
+    "payment",
+    "gateway",
+    "e-payment",
+    "algeria",
+    "edahabia",
+    "cib",
+    "javascript",
+    "typescript",
+    "nextjs",
+    "next.js",
+    "react",
+    "server-components"
+  ],
+  "author": {
+    "name": "Abderraouf Zine",
+    "email": "rofazayn@gmail.com",
+    "url": "https://github.com/rofazayn"
+  },
+  "contributors": [
+    {
+      "name": "Djallil Elkebir",
+      "email": "elkebir.djalil@gmail.com",
+      "url": "https://github.com/DjallilElk"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chargily/chargily-pay-javascript/issues"
+  },
+  "homepage": "https://github.com/chargily/chargily-pay-javascript#readme",
+  "peerDependencies": {
+    "next": ">=13.0.0",
+    "react": ">=18.0.0"
+  },
+  "peerDependenciesMeta": {
+    "next": {
+      "optional": true
+    },
+    "react": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
