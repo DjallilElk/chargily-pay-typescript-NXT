@@ -1,7 +1,7 @@
 {
-  "name": "@chargily/chargily-pay",
+  "name": "chargily-nextjs",
   "version": "2.1.0",
-  "description": "JavaScript Library for Chargily Pay™ Gateway - V2. The easiest and free way to integrate e-payment API through EDAHABIA of Algerie Poste and CIB of SATIM into your Next.js project.",
+  "description": "Next.js optimized library for Chargily Pay™ Gateway - V2. The easiest and free way to integrate e-payment API through EDAHABIA of Algerie Poste and CIB of SATIM into your Next.js project.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "module": "dist/index.js",
@@ -74,5 +74,6 @@
   },
   "engines": {
     "node": ">=18.0.0"
-  }
+  },
+  "engineStrict": false
 }

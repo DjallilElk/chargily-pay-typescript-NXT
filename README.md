@@ -24,13 +24,13 @@ This package is developed by **Rauf ([ruzolut](https://github.com/ruzolut))** an
 To include this library in your project, you can use npm or yarn:
 
 ```shell
-npm install @chargily/chargily-pay
+npm install chargily-nextjs
 ```
 
 or
 
 ```shell
-yarn add @chargily/chargily-pay
+yarn add chargily-nextjs
 ```
 
 ## Getting Started
@@ -42,7 +42,7 @@ Before utilizing the library, you must configure it with your [Chargily API key]
 ```ts
 'use server';
 
-import { ChargilyClient } from '@chargily/chargily-pay';
+import { ChargilyClient } from 'chargily-nextjs';
 
 const client = new ChargilyClient({
   api_key: process.env.CHARGILY_API_KEY!,
@@ -63,7 +63,7 @@ export async function createCheckoutAction(items: any[]) {
 
 ```ts
 // app/api/chargily/route.ts
-import { ChargilyClient } from '@chargily/chargily-pay';
+import { ChargilyClient } from 'chargily-nextjs';
 import { NextRequest, NextResponse } from 'next/server';
 
 const client = new ChargilyClient({
@@ -98,7 +98,7 @@ When implementing webhooks:
 Create a webhook endpoint at `app/api/webhook/route.ts`:
 
 ```ts
-import { verifySignature } from '@chargily/chargily-pay';
+import { verifySignature } from 'chargily-nextjs';
 import { NextRequest, NextResponse } from 'next/server';
 
 const API_SECRET_KEY = process.env.CHARGILY_API_KEY!;
@@ -154,7 +154,7 @@ To create a customer in a Next.js Server Action:
 ```ts
 'use server';
 
-import { ChargilyClient } from '@chargily/chargily-pay';
+import { ChargilyClient } from 'chargily-nextjs';
 
 const client = new ChargilyClient({
   api_key: process.env.CHARGILY_API_KEY!,
@@ -528,6 +528,10 @@ export async function listPaymentLinksAction() {
 This returns a paginated list of all payment links you've created.
 
 
+## About chargily-nextjs
+
+This is a Next.js optimized package for Chargily Pay™ Gateway. It's designed specifically for Next.js applications using Server Components and Server Actions, providing a modern, type-safe way to integrate Chargily Pay into your Next.js projects.
+
 ## About Chargily Pay™ packages
 
 Chargily Pay™ packages/plugins are a collection of open source projects published by Chargily to facilitate the integration of our payment gateway into different programming languages and frameworks. Our goal is to empower developers and businesses by providing easy-to-use tools to seamlessly accept payments.
@@ -549,7 +553,7 @@ We welcome contributions of all kinds, whether it's bug fixes, feature enhanceme
 2. **Clone the Repository:** Clone your forked repository to your local machine using the following command:
 
 ```bash
-git clone https://github.com/DjallilElk/chargily-pay-typescript-NXT/
+git clone https://github.com/Chargily/chargily-pay-javascript.git
 ```
 
 3. **Make Changes:** Make your desired changes or additions to the codebase. Be sure to follow our coding standards and guidelines.
