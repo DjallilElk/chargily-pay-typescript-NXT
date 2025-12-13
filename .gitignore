@@ -3,7 +3,7 @@ node_modules/
 
 # Build outputs
 lib/
-dist/
+# dist/ - Keep dist folder for npm package publishing
 
 # TypeScript cache
 *.tsbuildinfo

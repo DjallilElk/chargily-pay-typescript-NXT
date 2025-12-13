@@ -1,0 +1,3 @@
+export declare const CHARGILY_TEST_URL = "https://pay.chargily.net/test/api/v2";
+export declare const CHARGILY_LIVE_URL = "https://pay.chargily.net/api/v2";
+//# sourceMappingURL=index.d.ts.map
